@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+}
+
+body {
+  background-color: var(--testmonials-bk);
+  color: var(--white);
+}
+
+header, main, footer {
+  padding: 2.25rem 2.5rem;
+}
+
+main {
+  background-image: url("../globals/bg_imgs/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top 50px;
+}
+
+h1, h2, h3 {
+  font-family: Raleway;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 2rem;
+}
+header li {
+  display: inline;
+  list-style: none;
+  margin: 0 1.5625rem;
+}
+header li a {
+  color: var(--white);
+  text-decoration: none;
+}
+header li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  position: relative;
+}
+
+.section_one {
+  width: 35rem;
+  margin: 4rem auto;
+  text-align: center;
+}
+.section_one h1 {
+  font-size: 2rem;
+  margin-top: 25px;
+}
+.section_one p {
+  font-size: 12px;
+  width: 370px;
+  margin: 25px auto 1rem auto;
+}
+.section_one img {
+  width: 38rem;
+}
+.section_one button {
+  width: 150px;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: var(--cyan);
+  cursor: pointer;
+}
+.section_one button:hover {
+  background-color: hsl(176deg, 75%, 81%);
+  transition: 0.5s ease;
+}
+
+.section_two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.section_two .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+.section_two .info img {
+  width: 45px;
+}
+.section_two .info .legend {
+  margin: 1.25rem 3.5rem 0;
+}
+
+.section_three {
+  margin-bottom: 300px;
+}
+.section_three .illustration-plus-info {
+  margin-top: 4.5rem;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section_three .illustration-plus-info h1 {
+  font-size: 2rem;
+}
+.section_three .illustration-plus-info p {
+  margin-top: 1.5625rem;
+}
+.section_three .illustration-plus-info .howorks {
+  position: relative;
+}
+.section_three .illustration-plus-info .howorks a {
+  color: var(--cyan);
+}
+.section_three .illustration-plus-info .howorks a:hover {
+  color: var(--white);
+}
+.section_three .illustration-plus-info .howorks img {
+  position: absolute;
+  top: 0.3125rem;
+  left: 9.5rem;
+}
+.section_three .cards {
+  margin: 90px 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 200px;
+}
+.section_three .cards .card {
+  background-color: var(--testmonials-bk);
+  padding: 3.125rem 2rem 1.5625rem;
+  border-radius: 0.3125rem;
+  display: grid;
+  grid-template-rows: 1.3fr 0.7fr;
+  gap: 2rem;
+}
+.section_three .cards .card img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.section_three .cards .card .profile-component {
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+  align-items: end;
+}
+.section_three .cards .card .profile-component h3, .section_three .cards .card .profile-component p {
+  font-size: 12px;
+}
+
+.getStarted-form-component {
+  width: 60%;
+  margin: auto;
+  padding: 30px 40px;
+  text-align: center;
+  border-radius: 0.3125rem;
+  background-color: var(--intro-email-bk);
+  position: absolute;
+  top: 95.5%;
+  left: 20%;
+}
+.getStarted-form-component form {
+  display: flex;
+  gap: 20px;
+}
+.getStarted-form-component form input {
+  width: 75%;
+  padding: 0 2rem;
+}
+.getStarted-form-component form button {
+  width: 20%;
+  background-color: var(--cyan);
+}
+.getStarted-form-component form input, .getStarted-form-component form button {
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: 0;
+}
+
+footer {
+  padding-top: 210px;
+  background-color: var(--footer-bk);
+}
+footer .logo {
+  height: 2rem;
+  margin-bottom: 3rem;
+}
+footer .information-component {
+  display: grid;
+  grid-template-columns: 1.6fr 1.1fr 0.7fr 0.7fr 0.9fr;
+}
+footer .information-component .location {
+  display: grid;
+  grid-template-columns: 0.2fr 1.8fr;
+}
+footer .information-component .comunication div {
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-rows: 1fr 1fr;
+}
+footer .information-component ul {
+  list-style: none;
+}
+footer .information-component ul li {
+  margin-bottom: 25px;
+}
+footer .information-component ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+footer .information-component .social-media a {
+  margin-left: 5px;
+}
+
+html {
+  --intro-email-bk: hsl(217, 28%, 15%);
+  --main-bk: hsl(218, 28%, 13%);
+  --footer-bk: hsl(216, 53%, 9%);
+  --testmonials-bk: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red-error: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=Styles.css.map */
